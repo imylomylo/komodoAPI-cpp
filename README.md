@@ -11,6 +11,21 @@ $ g++ -c komodoapi.cpp -o komodoapi -ljsoncpp -ljsonrpccpp-common -ljsonrpccpp-c
 
 ##Suggestion from slack during troubleshooting
 
+goldenman [12:24 PM]
+If you want to implement main on the other source file.
+1. get object file of library `$ g++ -c komodoapi.cpp -ljsoncpp -ljsonrpccpp-common -ljsonrpccpp-client`
+2. you can see `komodoapi.o` file genrated.
+3. generate `main.cpp` file
+```#include "komodoapi.h"
+
+int main() {
+        return 0;
+}```
+4. `$ g++ -o komodotest main.cpp  komodoapi.o -ljsoncpp -ljsonrpccpp-common -ljsonrpccpp-client`
+5. `$ ./komodotest`
+
+Thanks for the tip, lol
+
 goldenman [11:49 AM]
 If you just want to try compile, add `-c`
 
