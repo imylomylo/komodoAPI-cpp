@@ -10,6 +10,7 @@ $ g++ -c komodoapi.cpp -o komodoapi -ljsoncpp -ljsonrpccpp-common -ljsonrpccpp-c
 
 Then the rest is just notes with not much formatting
 
+Arbitrary change to commit, to test github webhook for jenkins build.
 
 # Notes
 
