@@ -2,12 +2,16 @@
 
 
 ```
-sudo apt-get install libjsonrpccpp-dev libjsonrpccpp-tools
+sudo apt-get install libjsoncpp-dev libjsonrpccpp-dev libjsonrpccpp-tools
 
 $ g++ -c komodoapi.cpp -o komodoapi -ljsoncpp -ljsonrpccpp-common -ljsonrpccpp-client
 
 ```
 
+Then the rest is just notes with not much formatting
+
+
+# Notes
 
 ##Suggestion from slack during troubleshooting
 
